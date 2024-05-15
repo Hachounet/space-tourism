@@ -1,17 +1,10 @@
-# Template
+# Space-Tourism
 
-This repo serve as Ready-To-Work template for next projects with The Odin Project.
-This is a WIP.
+This project is made with Kevin Powell course in association with Frontend Mentor.
+It is a free course who have for objective to help learning and improving front end and responsive skills.
 
-Packages installed are :
-ESLint
-Prettier
-Prettier-ESLint-Config
-Webpack
-Webpack Dev Serv
+This repo is made with a template who use ESLint, Prettier, Prettier-ESLint-Config, Webpack and Webpack Dev Serv.
+Asset Managements are setup for Webpack.
 
-Need to be installed or setup :
-
-Asset management for Webpack
-
-Code-Actions ( plugin VSCode )
+Main personal objective is to, obviously, improve my capacities and learn to adapt to build this project with own implementation.
+Kevin Powell use CSS and don't use any bundler. I will use SCSS and will use Webpack.
