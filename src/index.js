@@ -1,3 +1,9 @@
 import './style.scss';
 /* eslint-disable no-console */
-console.log('Displaying from dev server');
+import Logo from './assets/shared/logo.svg';
+
+let LogoImg = new Image();
+LogoImg = Logo;
+
+const logoEl = document.querySelector('header > div > img.logo');
+logoEl.src = LogoImg;
