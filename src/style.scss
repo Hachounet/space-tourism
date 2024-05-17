@@ -113,7 +113,6 @@ select {
 // Select adjacent sibling, no specifity with :where so don't override ( trust Kevin Powell, not me )
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
-  outline: 1px solid red;
 }
 
 .container {
@@ -274,5 +273,90 @@ select {
   &:focus::after {
     opacity: 1;
     transform: scale(1.5);
+  }
+}
+
+.primary-navigation {
+  --gap: 8rem;
+  --underline-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+
+    span {
+      margin-right: 0.5em;
+      font-weight: 700;
+      color: hsl(var(--clr-sec) / 0.25);
+    }
+  }
+}
+
+.underline-indicators > * {
+  cursor: pointer;
+  padding: var(--underline-gap, 1rem) 0;
+  border: 0;
+  border-bottom: 0.2rem solid hsl(var(--clr-sec) / 0);
+
+  &:hover,
+  &:focus {
+    border-color: hsl(var(--clr-sec) / 0.5);
+  }
+
+  &.active,
+  &[aria-selected='true'] {
+    color: hsl(var(--clr-sec) / 1);
+    border-color: hsl(var(--clr-sec) / 1);
+  }
+}
+
+.tab-list {
+  --gap: 2rem;
+}
+
+.dot-indicators > * {
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  border: 0;
+  border-radius: 50%;
+  padding: 0.5em;
+  background-color: hsl(var(--clr-sec) / 0.25);
+
+  &:hover,
+  &:focus {
+    background-color: hsl(var(--clr-sec) / 0.5);
+  }
+
+  &[aria-selected='true'] {
+    background-color: hsl(var(--clr-sec) / 1);
+  }
+}
+
+.number-indicators > * {
+  cursor: pointer;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  font-size: 1.5em;
+  aspect-ratio: 1 / 1;
+  border: 1px solid hsl(var(--clr-sec) / 0.25);
+  border-radius: 50%;
+  padding: 2em;
+  background-color: hsl(var(--clr-dark) / 0.25);
+  color: hsl(var(--clr-sec));
+
+  &:hover,
+  &:focus {
+    border: 1px solid hsl(var(--clr-sec) / 0.5);
+  }
+
+  &[aria-selected='true'] {
+    background-color: hsl(var(--clr-sec) / 1);
+    color: hsl(var(--clr-dark));
   }
 }
