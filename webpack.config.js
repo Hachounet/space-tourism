@@ -10,6 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), // Chemin de sortie corrigé
     filename: 'bundle.js',
     clean: true,
+    assetModuleFilename: "src/assets/[path][name][ext]"
   },
   target: "web",
   // 3
@@ -23,8 +24,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      title: "Template",
-      myPageHeader: "Hello template",
+      title: "Space Tourism",
+      myPageHeader: "Space Tourism",
       template: "./src/index.html",
       filename: "./index.html",
     }),
@@ -34,6 +35,9 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: "assets/[path][name][ext]"
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
