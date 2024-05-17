@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="uppercase">Design system</h1>
+
+      <section
+        id="colors"
+        style="margin: 4rem 0"
+      >
+        <h2 class="numbered-title"><span>01</span> colors</h2>
+
+        <div class="flex">
+          <div style="flex-grow: 1">
+            <div
+              class="bg-dark text-sec ff-serif fs-500"
+              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+            >
+              #0B0D17
+            </div>
+            <p><span class="text-prim">RGB</span> 11, 13, 23</p>
+            <p><span class="text-prim">HSL</span> 230, 35%, 7%</p>
+          </div>
+
+          <div style="flex-grow: 1">
+            <div
+              class="bg-prim text-dark ff-serif fs-500"
+              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+            >
+              #0B0D17
+            </div>
+            <p><span class="text-prim">RGB</span>208, 214, 249</p>
+            <p><span class="text-prim">HSL</span>231, 77%, 90%</p>
+          </div>
+
+          <div style="flex-grow: 1">
+            <div
+              class="bg-sec text-dark ff-serif fs-500"
+              style="padding: 3rem 1rem 1rem; border: 1px solid white"
+            >
+              #FFFFFF
+            </div>
+            <p><span class="text-prim">RGB</span>255, 255, 255</p>
+            <p><span class="text-prim">HSL</span>0, 0%, 100%</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="typography"
+        style="margin: 4rem 0"
+      >
+        <h2 class="numbered-title"><span>02</span> Typography</h2>
+
+        <div class="flex">
+          <div
+            class=""
+            style="flex-basis: 100%; --flow-space: 2rem"
+          >
+            <div>
+              <p class="text-prim">Heading 1 - Bellefair Regular - 150px</p>
+              <p class="fs-900 ff-serif uppercase">Earth</p>
+            </div>
+
+            <div>
+              <p class="text-prim">Heading 2 - Bellefair Regular - 100 px</p>
+              <p class="fs-800 ff-serif uppercase">Venus</p>
+            </div>
+
+            <div>
+              <p class="text-prim">Heading 3 - Bellefair Regular - 56 px</p>
+              <p class="fs-700 ff-serif uppercase">Jupiter & Saturn</p>
+            </div>
+
+            <div>
+              <p class="text-prim">Heading 4 - Bellefair Regular - 32 px</p>
+              <p class="fs-600 ff-serif uppercase">Uranus, Neptune & Pluto</p>
+            </div>
+
+            <div>
+              <p class="text-prim">
+                Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character
+                Space
+              </p>
+              <p
+                class="fs-500 ff-sans-cond uppercase letter-spacing-1 text-prim"
+              >
+                So, you want to travel to space
+              </p>
+            </div>
+          </div>
+
+          <div
+            class=""
+            style="flex-basis: 100%; --flow-space: 2rem"
+          >
+            <div>
+              <p class="text-prim">Subheading 1 - Bellefair Regular - 28px</p>
+              <p class="fs-500 ff-serif uppercase">384. 400km</p>
+            </div>
+
+            <div>
+              <p class="text-prim">
+                Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character
+                Space
+              </p>
+              <p class="fs-200 ff-sans-cond uppercase letter-spacing-3">
+                Avg.Distance
+              </p>
+            </div>
+
+            <div>
+              <p class="text-prim">
+                Nav text - Barlow Condensed Regular - 16 px - 2.7 Character
+                Space
+              </p>
+              <p class="fs-300 ff-sans-cond uppercase letter-spacing-2">
+                Europa
+              </p>
+            </div>
+
+            <div>
+              <p class="text-prim">Body Text</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                debitis modi dolorem, inventore tempora vero, saepe laboriosam
+                voluptatum quod at pariatur. Ex dolores error voluptatibus
+                recusandae similique voluptates accusamus obcaecati! Aspernatur
+                unde optio praesentium modi labore impedit itaque officiis non!
+                Quaerat soluta labore sunt architecto eum aut. Culpa placeat,
+                ratione ad tenetur fuga sit perferendis voluptate a, nam
+                consequuntur odit. Pariatur labore deserunt perspiciatis velit
+                dolores blanditiis praesentium commodi non error reprehenderit.
+                Assumenda, quibusdam nemo ipsum tempore placeat libero sed
+                nihil, qui sint iure accusantium error doloribus, ad animi
+                laboriosam? Culpa est accusantium pariatur officiis voluptatibus
+                eaque iste itaque temporibus, autem nulla quibusdam magnam
+                recusandae cupiditate eveniet fuga odit neque, totam minus,
+                voluptatum porro repellat atque provident. Quaerat, non atque.
+                Error voluptatibus cupiditate, deleniti corrupti ea explicabo
+                delectus ducimus ad eum fugiat nulla dignissimos quia! Ratione
+                doloremque eos vel, optio quasi commodi tenetur nulla ipsum
+                dolorem, consequuntur ea, laudantium maxime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class=""
+        id="interactive-elements"
+      >
+        <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
+
+        <!-- navigation-->
+        <div>
+          <nav>
+            <ul
+              class="primary-navigation underline-indicators flex"
+              style="justify-content: center"
+            >
+              <li class="active">
+                <a
+                  class="uppercase text-sec letter-spacing-2"
+                  href="#"
+                  ><span>01</span>Active</a
+                >
+              </li>
+              <li>
+                <a
+                  class="uppercase text-sec letter-spacing-2"
+                  href="#"
+                  ><span>02</span>Hovered</a
+                >
+              </li>
+              <li>
+                <a
+                  class="uppercase text-sec letter-spacing-2"
+                  href="#"
+                  ><span>03</span>Idle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex">
+          <div style="margin-top: 5rem">
+            <!--explore button-->
+
+            <a
+              href="#"
+              class="large-button uppercase ff-serif fs-600 text-dark bg-sec"
+              >Explore</a
+            >
+          </div>
+
+          <div
+            class="flow"
+            style="margin-top: 5rem; margin-bottom: 50vh; --flow-space: 4rem"
+          >
+            <!--Tabs-->
+            <div class="tab-list underline-indicators flex">
+              <button
+                aria-selected="true"
+                class="uppercase text-prim letter-spacing-2 bg-dark ff-sans-cond"
+              >
+                Moon
+              </button>
+              <button
+                aria-selected="false"
+                class="uppercase text-prim letter-spacing-2 bg-dark ff-sans-cond"
+              >
+                Mars
+              </button>
+              <button
+                aria-selected="false"
+                class="uppercase text-prim letter-spacing-2 bg-dark ff-sans-cond"
+              >
+                Europa
+              </button>
+            </div>
+          </div>
+          <!--Dots-->
+          <div style="margin-top: 5rem">
+            <div class="dot-indicators flex">
+              <button aria-selected="true">
+                <span class="sr-only">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Slide title</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">Slide title</span>
+              </button>
+            </div>
+          </div>
+          <!--Numbers-->
+          <div class="number-indicators ff-serif">
+            <button aria-selected="true">1</button>
+            <button aria-selected="false">2</button>
+            <button aria-selected="false">3</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
